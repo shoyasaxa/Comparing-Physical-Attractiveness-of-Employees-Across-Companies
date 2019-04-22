@@ -25,6 +25,9 @@ for folder in root_folders:
 			height,width,channels = image.shape 
 
 			for (x, y, w, h) in faces:
+
+				# edit borders to get a better picture of the whole face
+
 				if ( x >= 30):
 					x -= 30 
 				elif ( x >= 15):
